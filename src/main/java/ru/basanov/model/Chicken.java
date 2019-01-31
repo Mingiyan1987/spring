@@ -21,6 +21,7 @@ public class Chicken {
     }
 
     public Chicken() {
+
     }
 
     @Override
