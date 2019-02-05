@@ -25,7 +25,7 @@ public class Nest {
 
     @Override
     public String toString() {
-        return "Nest{" +
+        return "INest{" +
                 "name='" + name + '\'' +
                 '}';
     }

@@ -2,10 +2,9 @@ package ru.basanov;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import ru.basanov.api.INest;
 import ru.basanov.config.ApplicationConfig;
-import ru.basanov.model.Chicken;
-import ru.basanov.model.Nest;
-
+import ru.basanov.processor.UnproducableChickenBeanFactoryPostProcessor;
 
 /*
  * @author Mingiyan Basanov
@@ -14,17 +13,11 @@ import ru.basanov.model.Nest;
 public class App {
     public static void main(String[] args) {
         final ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfig.class);
-        final Nest nest = context.getBean(Nest.class);
-        final Chicken chicken = context.getBean(Chicken.class);
-        System.out.println(nest);
-        System.out.println(chicken);
-        System.out.println();
-
-        System.out.println(context.getBean("Provider", Nest.class));
-        System.out.println(context.getBean("Provider"));
-        System.out.println();
-
-        System.out.println(context.getBean("Consumer", Chicken.class));
-        System.out.println(context.getBean("Consumer"));
+        INest nest = context.getBean(INest.class);
+        nest.feedTheChicken();
+        nest.flyOutOfTheNest();
+        nest.feedTheChicken();
+        nest = context.getBean("nest", INest.class);
+        nest.feedTheChicken();
     }
 }
