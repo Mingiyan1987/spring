@@ -43,7 +43,11 @@ public class ApplicationConfig {
             final DataSource dataSource,
             @Value("${hibernate.show_sql}") final boolean showSql,
             @Value("${hibernate.hbm2ddl.auto}") final String tableStrategy,
-            @Value("${hibernate.dialect}") final String dialect
+            @Value("${hibernate.dialect}") final String dialect,
+            @Value("${hibernate.max_fetch_depth}") final String fetchDepth,
+            @Value("${hibernate.jdbc.fetch_size}") final String fetchSize,
+            @Value("${hibernate.jdbc.batch_size}") final String batchSize
+
     ) {
         final LocalContainerEntityManagerFactoryBean factoryBean;
         factoryBean = new LocalContainerEntityManagerFactoryBean();
@@ -54,6 +58,9 @@ public class ApplicationConfig {
         properties.put("hibernate.show_sql", showSql);
         properties.put("hibernate.hbm2ddl.auto", tableStrategy);
         properties.put("hibernate.dialect", dialect);
+        properties.put("hibernate.max.fetch_depth", fetchDepth);
+        properties.put("hibernate.jdbc.fetch_size", fetchSize);
+        properties.put("hibernate.jdbc.batch_size", batchSize);
         factoryBean.setJpaProperties(properties);
         return factoryBean;
     }

@@ -2,51 +2,86 @@ package ru.basanov.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import ru.basanov.model.Company;
+import ru.basanov.repository.AbstractRepository;
 import ru.basanov.repository.CompanyRepository;
 
-import java.util.List;
+import java.util.Optional;
 
 @Service
-@Transactional
-public class CompanyService {
+public class CompanyService extends AbstractRepository implements CompanyRepository{
 
     @Autowired
     private CompanyRepository companyRepository;
 
-    public Company findOne(String id) {
-        if (id == null || id.isEmpty()) return null;
-        return companyRepository.findOne(id);
+
+    @Override
+    public void persist(Company company) {
+        companyRepository.persist(company);
     }
 
-    public List<Company> findAll() {
-        return companyRepository.findAll();
+    @Override
+    public void merge(Company company) {
+        companyRepository.merge(company);
     }
 
-    public void removeById(String id) {
-        if (id == null || id.isEmpty()) return;;
-        companyRepository.removeById(id);
+    @Override
+    public void remove(Company company) {
+        companyRepository.remove(company);
     }
 
-    public Company getCompanyById(String id) {
-        return companyRepository.getAdById(id);
+    @Override
+    public <S extends Company> S save(S s) {
+        return null;
     }
 
-    public List<String> getListCompanyId() {
-        return companyRepository.getListCompanyId();
+    @Override
+    public <S extends Company> Iterable<S> saveAll(Iterable<S> iterable) {
+        return null;
     }
 
-    public List<Company> getListCompany() {
-        return companyRepository.getListCompany();
+    @Override
+    public Optional<Company> findById(String s) {
+        return Optional.empty();
     }
 
-    public Long getCountCompany() {
-        return companyRepository.getCountCompany();
+    @Override
+    public boolean existsById(String s) {
+        return false;
     }
 
-    public void removeAll() {
-        companyRepository.removeAll();
+    @Override
+    public Iterable<Company> findAll() {
+        return null;
     }
 
+    @Override
+    public Iterable<Company> findAllById(Iterable<String> iterable) {
+        return null;
+    }
+
+    @Override
+    public long count() {
+        return 0;
+    }
+
+    @Override
+    public void deleteById(String s) {
+
+    }
+
+    @Override
+    public void delete(Company company) {
+
+    }
+
+    @Override
+    public void deleteAll(Iterable<? extends Company> iterable) {
+
+    }
+
+    @Override
+    public void deleteAll() {
+
+    }
 }

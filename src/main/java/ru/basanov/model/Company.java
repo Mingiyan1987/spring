@@ -12,7 +12,7 @@ import java.util.List;
         @NamedQuery(name = Company.QUERY_FIND_ALL, query = "SELECT e FROM Company e"),
         @NamedQuery(name = Company.QUERY_REMOVE_ALL, query = "DELETE FROM Company e")
 })
-public class Company {
+public class Company{
 
     public static final String QUERY_GET_BY_ID = "Company.getById";
 
@@ -41,6 +41,9 @@ public class Company {
 
     public Company(String nameCompany) {
         this.nameCompany = nameCompany;
+    }
+
+    public Company() {
     }
 
     public Long getId() {

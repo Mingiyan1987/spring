@@ -3,7 +3,7 @@ package ru.basanov.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "app_Ad")
+@Table(name = "appAd")
 @NamedQueries({
         @NamedQuery(name = Ad.QUERY_GET_BY_ID, query = "SELECT e FROM Ad e WHERE e.id = :id"),
         @NamedQuery(name = Ad.QUERY_REMOVE_BY_ID, query = "DELETE FROM Ad e WHERE e.id = :id"),
@@ -22,6 +22,7 @@ public class Ad {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
     @ManyToOne
@@ -34,6 +35,9 @@ public class Ad {
 
     @Column(name = "content")
     private String content;
+
+    public Ad() {
+    }
 
     public Long getId() {
         return id;

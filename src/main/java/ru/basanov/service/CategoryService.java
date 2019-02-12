@@ -2,51 +2,85 @@ package ru.basanov.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import ru.basanov.model.Ad;
 import ru.basanov.model.Category;
+import ru.basanov.repository.AbstractRepository;
 import ru.basanov.repository.CategoryRepository;
 
-import java.util.List;
+import java.util.Optional;
 
 @Service
-@Transactional
-public class CategoryService {
+public class CategoryService extends AbstractRepository implements CategoryRepository{
 
     @Autowired
     private CategoryRepository categoryRepository;
 
-    public Category findOne(String id) {
-        if (id == null || id.isEmpty()) return null;
-        return categoryRepository.findOne(id);
+    @Override
+    public void persist(Category category) {
+        categoryRepository.persist(category);
     }
 
-    public List<Category> findAll() {
+    @Override
+    public void merge(Category category) {
+        categoryRepository.merge(category);
+    }
+
+    @Override
+    public void remove(Category category) {
+        categoryRepository.remove(category);
+    }
+
+    @Override
+    public <S extends Category> S save(S s) {
+        return categoryRepository.save(s);
+    }
+
+    @Override
+    public <S extends Category> Iterable<S> saveAll(Iterable<S> iterable) {
+        return categoryRepository.saveAll(iterable);
+    }
+
+    @Override
+    public Optional<Category> findById(String s) {
+        return categoryRepository.findById(s);
+    }
+
+    @Override
+    public boolean existsById(String s) {
+        return categoryRepository.existsById(s);
+    }
+
+    @Override
+    public Iterable<Category> findAll() {
         return categoryRepository.findAll();
     }
 
-    public void removeById(String id) {
-        if(id == null || id.isEmpty()) return;
-        categoryRepository.removeById(id);
+    @Override
+    public Iterable<Category> findAllById(Iterable<String> iterable) {
+        return categoryRepository.findAllById(iterable);
     }
 
-    public Category getCategoryById(String id) {
-        return categoryRepository.getCategoryById(id);
+    @Override
+    public long count() {
+        return categoryRepository.count();
     }
 
-    public List<String> getListCategoryId() {
-        return categoryRepository.getListCategoryId();
+    @Override
+    public void deleteById(String s) {
+        categoryRepository.deleteById(s);
     }
 
-    public List<Category> getListCategory() {
-        return categoryRepository.getListCategory();
+    @Override
+    public void delete(Category category) {
+        categoryRepository.delete(category);
     }
 
-    public Long getCountCategory() {
-        return categoryRepository.getCountCategory();
+    @Override
+    public void deleteAll(Iterable<? extends Category> iterable) {
+        categoryRepository.deleteAll(iterable);
     }
 
-    public void removeAll() {
-        categoryRepository.removeAll();
+    @Override
+    public void deleteAll() {
+        categoryRepository.deleteAll();
     }
 }

@@ -4,43 +4,85 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.basanov.model.Ad;
+import ru.basanov.repository.AbstractRepository;
 import ru.basanov.repository.AdRepository;
 
-import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional
-public class AdService {
+public class AdService extends AbstractRepository implements AdRepository {
 
     @Autowired
     private AdRepository adRepository;
 
-    public Ad findOne(String id) {
-        if (id == null || id.isEmpty()) return null;
-        return adRepository.findOne(id); }
-
-    public List<Ad> findAll() {return adRepository.findAll();}
-
-    public void removeById(String id) {
-        if (id == null || id.isEmpty()) return;
-        adRepository.removeById(id);
+    @Override
+    public void persist(Ad ad) {
+        adRepository.persist(ad);
     }
 
-    public Ad getAdById(String id) {
-        return adRepository.getAdById(id);
+    @Override
+    public void merge(Ad ad) {
+        adRepository.merge(ad);
     }
 
-    public List<String> getListAdId() { return adRepository.getListAdId();}
-
-    public List<Ad> getListAd() {
-        return adRepository.getListAd();
+    @Override
+    public void remove(Ad ad) {
+        adRepository.remove(ad);
     }
 
-    public Long getCountAd() {
-        return adRepository.getCountAd();
+    @Override
+    public <S extends Ad> S save(S s) {
+        return adRepository.save(s);
     }
 
-    public void removeAll() {
-        adRepository.removeAll();
+    @Override
+    public <S extends Ad> Iterable<S> saveAll(Iterable<S> iterable) {
+        return adRepository.saveAll(iterable);
+    }
+
+    @Override
+    public Optional<Ad> findById(String s) {
+        return adRepository.findById(s);
+    }
+
+    @Override
+    public boolean existsById(String s) {
+        return adRepository.existsById(s);
+    }
+
+    @Override
+    public Iterable<Ad> findAll() {
+        return entityManager.createNamedQuery("QUERY_FIND_ALL", Ad.class).getResultList();
+    }
+
+    @Override
+    public Iterable<Ad> findAllById(Iterable<String> iterable) {
+        return adRepository.findAllById(iterable);
+    }
+
+    @Override
+    public long count() {
+        return adRepository.count();
+    }
+
+    @Override
+    public void deleteById(String s) {
+        adRepository.deleteById(s);
+    }
+
+    @Override
+    public void delete(Ad ad) {
+        adRepository.delete(ad);
+    }
+
+    @Override
+    public void deleteAll(Iterable<? extends Ad> iterable) {
+        adRepository.deleteAll(iterable);
+    }
+
+    @Override
+    public void deleteAll() {
+        adRepository.deleteAll();
     }
 }

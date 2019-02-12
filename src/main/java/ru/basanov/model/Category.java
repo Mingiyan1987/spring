@@ -33,6 +33,9 @@ public class Category {
     @OneToMany(mappedBy = "category")
     private List<Ad> ads;
 
+    public Category() {
+    }
+
     public List<Ad> getAds() {
         return ads;
     }
