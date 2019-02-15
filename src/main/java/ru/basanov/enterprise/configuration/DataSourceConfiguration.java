@@ -1,4 +1,4 @@
-package ru.basanov.config;
+package ru.basanov.enterprise.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -19,9 +19,9 @@ import java.util.Properties;
  */
 
 @EnableTransactionManagement
-@ComponentScan("ru.basanov")
+@ComponentScan("ru.basanov.enterprise")
 @PropertySource("classpath:db-conf.properties")
-public class ApplicationConfig {
+public class DataSourceConfiguration {
 
     @Bean
     public DataSource dataSource(

@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import ru.basanov.model.Category;
 import ru.basanov.repository.AbstractRepository;
 import ru.basanov.repository.CategoryRepository;
+import sun.reflect.generics.repository.AbstractRepository;
 
 import java.util.Optional;
 

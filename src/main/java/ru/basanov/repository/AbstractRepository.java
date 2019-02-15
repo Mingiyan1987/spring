@@ -1,8 +1,7 @@
-package ru.basanov.repository;
+package ru.basanov.enterprise.repository;
 
-import org.springframework.stereotype.Repository;
-import ru.basanov.model.Ad;
-import ru.basanov.model.Category;
+import ru.basanov.enterprise.model.Ad;
+import ru.basanov.enterprise.model.Category;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
