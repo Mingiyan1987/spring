@@ -6,7 +6,6 @@ import org.springframework.transaction.annotation.Transactional;
 import ru.basanov.model.Ad;
 import ru.basanov.repository.AbstractRepository;
 import ru.basanov.repository.AdRepository;
-import sun.reflect.generics.repository.AbstractRepository;
 
 import java.util.Optional;
 

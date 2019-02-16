@@ -14,7 +14,6 @@ public class CompanyService extends AbstractRepository implements CompanyReposit
     @Autowired
     private CompanyRepository companyRepository;
 
-
     @Override
     public void persist(Company company) {
         companyRepository.persist(company);

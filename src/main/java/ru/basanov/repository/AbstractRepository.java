@@ -1,7 +1,4 @@
-package ru.basanov.enterprise.repository;
-
-import ru.basanov.enterprise.model.Ad;
-import ru.basanov.enterprise.model.Category;
+package ru.basanov.repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

@@ -19,7 +19,7 @@ import java.util.Properties;
  */
 
 @EnableTransactionManagement
-@ComponentScan("ru.basanov.enterprise")
+@ComponentScan("ru.basanov")
 @PropertySource("classpath:db-conf.properties")
 public class DataSourceConfiguration {
 
