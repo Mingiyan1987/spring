@@ -6,12 +6,6 @@ import java.util.List;
 
 @Entity
 @Table(name = "appCompany")
-@NamedQueries({
-        @NamedQuery(name = Company.QUERY_GET_BY_ID, query = "SELECT e FROM Company e WHERE e.id = :id"),
-        @NamedQuery(name = Company.QUERY_REMOVE_BY_ID, query = "DELETE FROM Company e WHERE Ad.id = :id"),
-        @NamedQuery(name = Company.QUERY_FIND_ALL, query = "SELECT e FROM Company e"),
-        @NamedQuery(name = Company.QUERY_REMOVE_ALL, query = "DELETE FROM Company e")
-})
 public class Company{
 
     public static final String QUERY_GET_BY_ID = "Company.getById";

@@ -2,85 +2,60 @@ package ru.basanov.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.basanov.model.Company;
-import ru.basanov.repository.AbstractRepository;
 import ru.basanov.repository.CompanyRepository;
 
 import java.util.Optional;
 
 @Service
-public class CompanyService extends AbstractRepository implements CompanyRepository{
+@Transactional
+public class CompanyService {
 
     @Autowired
     private CompanyRepository companyRepository;
 
-    @Override
-    public void persist(Company company) {
-        companyRepository.persist(company);
-    }
-
-    @Override
-    public void merge(Company company) {
-        companyRepository.merge(company);
-    }
-
-    @Override
-    public void remove(Company company) {
-        companyRepository.remove(company);
-    }
-
-    @Override
     public <S extends Company> S save(S s) {
-        return null;
+        return companyRepository.save(s);
     }
 
-    @Override
     public <S extends Company> Iterable<S> saveAll(Iterable<S> iterable) {
-        return null;
+        return companyRepository.saveAll(iterable);
     }
 
-    @Override
     public Optional<Company> findById(String s) {
-        return Optional.empty();
+        return companyRepository.findById(s);
     }
 
-    @Override
     public boolean existsById(String s) {
-        return false;
+        return companyRepository.existsById(s);
     }
 
-    @Override
     public Iterable<Company> findAll() {
-        return null;
+        return companyRepository.findAll();
     }
 
-    @Override
     public Iterable<Company> findAllById(Iterable<String> iterable) {
-        return null;
+        return companyRepository.findAllById(iterable);
     }
 
-    @Override
     public long count() {
-        return 0;
+        return companyRepository.count();
     }
 
-    @Override
     public void deleteById(String s) {
-
+        companyRepository.deleteById(s);
     }
 
-    @Override
     public void delete(Company company) {
-
+        companyRepository.delete(company);
     }
 
-    @Override
     public void deleteAll(Iterable<? extends Company> iterable) {
-
+        companyRepository.deleteAll(iterable);
     }
 
-    @Override
     public void deleteAll() {
-
+        companyRepository.deleteAll();
     }
 }

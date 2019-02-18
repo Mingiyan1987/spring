@@ -4,13 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "appAd")
-@NamedQueries({
-        @NamedQuery(name = Ad.QUERY_GET_BY_ID, query = "SELECT e FROM Ad e WHERE e.id = :id"),
-        @NamedQuery(name = Ad.QUERY_REMOVE_BY_ID, query = "DELETE FROM Ad e WHERE e.id = :id"),
-        @NamedQuery(name = Ad.QUERY_FIND_ALL, query = "SELECT e FROM Ad e"),
-        @NamedQuery(name = Ad.QUERY_REMOVE_ALL, query = "DELETE FROM Ad e")
-})
-public class Ad {
+public class Ad extends AbstractEntity{
 
     public static final String QUERY_GET_BY_ID = "Ad.getById";
 
@@ -38,6 +32,12 @@ public class Ad {
 
     public Ad() {
     }
+
+    @Override
+    public <T> T getEntity(TypedQuery<T> query) {
+        return super.getEntity(query);
+    }
+
 
     public Long getId() {
         return id;
@@ -70,4 +70,5 @@ public class Ad {
     public void setContent(String content) {
         this.content = content;
     }
+
 }

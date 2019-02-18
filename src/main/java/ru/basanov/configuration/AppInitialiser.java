@@ -1,4 +1,4 @@
-package ru.basanov.enterprise.configuration;
+package ru.basanov.configuration;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

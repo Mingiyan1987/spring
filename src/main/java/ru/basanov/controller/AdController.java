@@ -1,4 +1,4 @@
-package ru.basanov.enterprise.controller;
+package ru.basanov.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

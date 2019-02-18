@@ -1,9 +1,10 @@
-package ru.basanov.enterprise.configuration;
+package ru.basanov.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
@@ -20,6 +21,7 @@ import java.util.Properties;
 
 @EnableTransactionManagement
 @ComponentScan("ru.basanov")
+@EnableJpaRepositories("ru.basanov")
 @PropertySource("classpath:db-conf.properties")
 public class DataSourceConfiguration {
 
@@ -47,13 +49,12 @@ public class DataSourceConfiguration {
             @Value("${hibernate.max_fetch_depth}") final String fetchDepth,
             @Value("${hibernate.jdbc.fetch_size}") final String fetchSize,
             @Value("${hibernate.jdbc.batch_size}") final String batchSize
-
     ) {
         final LocalContainerEntityManagerFactoryBean factoryBean;
-        factoryBean = new LocalContainerEntityManagerFactoryBean();
-        factoryBean.setDataSource(dataSource);
+            factoryBean = new LocalContainerEntityManagerFactoryBean();
         factoryBean.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
-        factoryBean.setPackagesToScan("ru.basanov.model");
+        factoryBean.setDataSource(dataSource);
+        factoryBean.setPackagesToScan("ru.basanov");
         final Properties properties = new Properties();
         properties.put("hibernate.show_sql", showSql);
         properties.put("hibernate.hbm2ddl.auto", tableStrategy);
@@ -73,4 +74,5 @@ public class DataSourceConfiguration {
         transactionManager.setEntityManagerFactory(entityManagerFactory.getObject());
         return transactionManager;
     }
+
 }
