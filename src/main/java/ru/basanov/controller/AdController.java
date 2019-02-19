@@ -1,5 +1,6 @@
 package ru.basanov.controller;
 
+import com.ocpsoft.pretty.faces.annotation.URLMapping;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,6 +9,11 @@ import ru.basanov.model.Ad;
 import ru.basanov.service.AdService;
 
 @Controller
+@URLMapping(
+        id = "dateBean",
+        pattern = "/Ad",
+        viewId = "/WEB-INF/views/Ad.xhtml"
+)
 public class AdController {
 
     @Autowired
