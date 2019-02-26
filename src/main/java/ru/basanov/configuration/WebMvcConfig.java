@@ -15,7 +15,7 @@ import org.springframework.web.servlet.view.JstlView;
 @EnableWebMvc
 @ComponentScan(basePackages = "ru.basanov")
 public class WebMvcConfig implements WebMvcConfigurer {
-    
+
     @Bean
     public InternalResourceViewResolver resolver() {
         final InternalResourceViewResolver resolver = new InternalResourceViewResolver();
