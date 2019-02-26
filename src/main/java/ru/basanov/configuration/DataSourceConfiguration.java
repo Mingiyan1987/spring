@@ -3,6 +3,7 @@ package ru.basanov.configuration;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -20,8 +21,8 @@ import java.util.Properties;
  */
 
 @EnableTransactionManagement
-@ComponentScan("ru.basanov")
-@EnableJpaRepositories("ru.basanov")
+@ComponentScans(value = {@ComponentScan("ru.basanov")})
+@EnableJpaRepositories("ru.basanov.repository")
 @PropertySource("classpath:db-conf.properties")
 public class DataSourceConfiguration {
 

@@ -1,30 +1,35 @@
 package ru.basanov.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.basanov.model.Company;
 import ru.basanov.repository.CompanyRepository;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.Optional;
 
 @Service
-@Transactional
 public class CompanyService {
 
     @Autowired
     private CompanyRepository companyRepository;
 
+    @Transactional
     public <S extends Company> S save(S s) {
         return companyRepository.save(s);
     }
 
-    public <S extends Company> Iterable<S> saveAll(Iterable<S> iterable) {
-        return companyRepository.saveAll(iterable);
-    }
-
+    @Transactional(readOnly = true)
     public Optional<Company> findById(String s) {
         return companyRepository.findById(s);
+    }
+
+    public <S extends Company> Iterable<S> saveAll(Iterable<S> iterable) {
+        return companyRepository.saveAll(iterable);
     }
 
     public boolean existsById(String s) {
