@@ -1,0 +1,12 @@
+ru/basanov/configuration/DataSourceConfiguration.class
+ru/basanov/App.class
+ru/basanov/controller/CompanyController.class
+ru/basanov/model/Company.class
+ru/basanov/repository/CompanyRepository.class
+ru/basanov/model/Ad.class
+ru/basanov/model/Category.class
+ru/basanov/service/CompanyService.class
+ru/basanov/controller/HelloController.class
+ru/basanov/model/AbstractEntity.class
+ru/basanov/configuration/AppInitialiser.class
+ru/basanov/configuration/WebMvcConfig.class
