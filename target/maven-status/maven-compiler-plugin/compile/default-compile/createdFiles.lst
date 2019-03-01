@@ -10,5 +10,5 @@ ru/basanov/model/Category.class
 ru/basanov/service/CompanyService.class
 ru/basanov/controller/HelloController.class
 ru/basanov/model/AbstractEntity.class
-ru/basanov/configuration/AppInitialiser.class
+ru/basanov/configuration/AppInitializer.class
 ru/basanov/configuration/WebMvcConfig.class

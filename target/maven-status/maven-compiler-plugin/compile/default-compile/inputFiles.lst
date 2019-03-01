@@ -1,9 +1,9 @@
 /Users/mingiyan/IdeaProjects/spring/src/main/java/ru/basanov/configuration/AppConfig.java
-/Users/mingiyan/IdeaProjects/spring/src/main/java/ru/basanov/configuration/AppInitialiser.java
 /Users/mingiyan/IdeaProjects/spring/src/main/java/ru/basanov/configuration/DataSourceConfiguration.java
 /Users/mingiyan/IdeaProjects/spring/src/main/java/ru/basanov/controller/HelloController.java
 /Users/mingiyan/IdeaProjects/spring/src/main/java/ru/basanov/model/Ad.java
 /Users/mingiyan/IdeaProjects/spring/src/main/java/ru/basanov/configuration/WebMvcConfig.java
+/Users/mingiyan/IdeaProjects/spring/src/main/java/ru/basanov/configuration/AppInitializer.java
 /Users/mingiyan/IdeaProjects/spring/src/main/java/ru/basanov/service/CompanyService.java
 /Users/mingiyan/IdeaProjects/spring/src/main/java/ru/basanov/configuration/WebAppInitializer.java
 /Users/mingiyan/IdeaProjects/spring/src/main/java/ru/basanov/model/Company.java
