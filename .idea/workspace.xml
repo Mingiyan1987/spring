@@ -6,17 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2d0dd0-c70e-4216-af21-39b36c92deeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/AppInitialiser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-    </list>
+    <list default="true" id="4f2d0dd0-c70e-4216-af21-39b36c92deeb" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,7 +60,7 @@
           <entry key="faces-config" value="3" />
           <entry key="gitignore" value="4" />
           <entry key="iml" value="5" />
-          <entry key="java" value="590" />
+          <entry key="java" value="591" />
           <entry key="jsp" value="21" />
           <entry key="properties" value="23" />
           <entry key="xhtml" value="10" />
@@ -81,7 +71,7 @@
         <counts>
           <entry key="CLASS" value="167" />
           <entry key="IDEA_MODULE" value="5" />
-          <entry key="JAVA" value="590" />
+          <entry key="JAVA" value="591" />
           <entry key="JSP" value="21" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Properties" value="23" />
@@ -93,7 +83,7 @@
         <counts>
           <entry key="dummy" value="47" />
           <entry key="faces-config" value="122" />
-          <entry key="java" value="21025" />
+          <entry key="java" value="21027" />
           <entry key="jsp" value="647" />
           <entry key="properties" value="452" />
           <entry key="xhtml" value="147" />
@@ -102,7 +92,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="21022" />
+          <entry key="JAVA" value="21024" />
           <entry key="JPA QL" value="3" />
           <entry key="JSP" value="647" />
           <entry key="PLAIN_TEXT" value="47" />
@@ -130,8 +120,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+            <state relative-caret-position="253">
+              <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -139,7 +138,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/controller/CompanyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
+            <state relative-caret-position="315">
               <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -160,7 +159,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/configuration/DataSourceConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="186">
               <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -299,7 +298,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/AppInitialiser.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db-conf.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ru/basanov/service/AdService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/basanov/App.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/basanov/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
@@ -325,6 +323,7 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/AppInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/basanov/configuration/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/basanov/App.java" />
       </list>
     </option>
   </component>
@@ -864,7 +863,7 @@
       <workItem from="1551361921741" duration="3071000" />
       <workItem from="1551373707933" duration="1006000" />
       <workItem from="1551422035823" duration="3521000" />
-      <workItem from="1551426681892" duration="2453000" />
+      <workItem from="1551426681892" duration="2943000" />
     </task>
     <servers />
   </component>
@@ -874,7 +873,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269068000" />
+    <option name="totallyTimeSpent" value="269558000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -887,6 +886,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="57" width="1293" height="698" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.2737819" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -921,7 +921,7 @@
       <window_info anchor="right" id="Database" order="5" weight="0.32833022" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.2559938" />
+      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.29311678" />
       <window_info anchor="right" id="JSF" order="9" weight="0.32833022" />
     </layout>
   </component>
@@ -983,13 +983,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/controller/IndexController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.xhtml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/model/Company.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/repository/CategoryRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/service/CategoryService.java" />
@@ -1048,47 +1041,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/configuration/AbstactAnnotationConfigDispatcherServletInitializer.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/configuration/DataSourceConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/service/CompanyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/controller/CompanyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/configuration/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1104,6 +1060,50 @@
             <element signature="e#489#490#0" expanded="true" />
             <element signature="e#525#526#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/controller/CompanyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/configuration/DataSourceConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/basanov/configuration/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1123,8 +1123,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        <state relative-caret-position="253">
+          <caret line="91" column="32" selection-start-line="91" selection-start-column="32" selection-end-line="91" selection-end-column="32" />
         </state>
       </provider>
     </entry>
